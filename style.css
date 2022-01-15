@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+body {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1;
+}
+
+/*  */
+
+.box {
+  background-color: rgb(231, 126, 40);
+  text-align: center;
+  padding: 2em;
+}
+
+#he2 {
+  margin-bottom: 1em;
+}
+
+#input {
+  width: 70%;
+  padding: 12px;
+  margin: 0;
+  border: none;
+  font-size: 18px;
+}
+
+#buton1 {
+  padding: 12px 0;
+  width: 30%;
+  margin: 0;
+  background-color: #d1d1d1;
+  border: none;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+#buton1:hover {
+  background-color: #4b4b4b;
+  color: #fff;
+  cursor: pointer;
+}
+
+#list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#itemLi {
+  background-color: #d6d6d6;
+  padding: 10px 0;
+  padding-left: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+#itemLi:nth-child(odd) {
+  background: #e9e9e9;
+}
+
+#itemLi:hover {
+  background: #9c9c9c;
+}
+
+ul li.checked {
+  background-color: #7a7a7a !important;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 13px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 20px;
+  width: 10px;
+}
